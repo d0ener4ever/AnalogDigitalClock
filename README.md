@@ -49,7 +49,7 @@ How to Run
 
     Clone this repository:
 
-        git clone https://github.com/d0ener4ever/dynamic-clock
+        git clone https://github.com/d0ener4ever/AnalogDigitalClock
 
     Navigate to the project folder:
 
@@ -60,3 +60,5 @@ How to Run
 Preview
 
 Here's what the clock looks like in action:
+
+    http://bochnick.com/
