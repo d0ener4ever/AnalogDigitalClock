@@ -1,0 +1,113 @@
+/* Styling for the entire page */
+body {
+    display: flex; /* Center the clock horizontally */
+    justify-content: center; /* Center the clock horizontally */
+    align-items: center; /* Center the clock vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Light gray background */
+    margin: 0; /* Remove default margins */
+}
+
+/* Main container for the clock */
+.clock {
+    position: relative; /* Position elements inside relative to the clock */
+    width: 300px; /* Width of the clock */
+    height: 300px; /* Height of the clock */
+    background-color: white; /* White clock face */
+    border: 5px solid black; /* Black border for the clock */
+    border-radius: 50%; /* Make the clock circular */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+}
+
+/* Center point of the clock */
+.center {
+    position: absolute;
+    width: 10px; /* Size of the center dot */
+    height: 10px;
+    background-color: black; /* Black center */
+    border-radius: 50%; /* Make the dot circular */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Precisely center the dot */
+}
+
+/* General styling for all hands (hour, minute, second) */
+.hour-hand, .minute-hand, .second-hand {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform-origin: 0 50%; /* Rotate from the left edge */
+    transform: rotate(-90deg) scaleX(1); /* Start from the top (12 o'clock) */
+    background-color: black; /* Default color for hands */
+}
+
+/* Hour hand-specific styling */
+.hour-hand {
+    height: 100px; /* Height of the hour hand */
+    width: 0; /* Thin hand appearance */
+}
+
+/* Minute hand-specific styling */
+.minute-hand {
+    background-color: blue; /* Blue minute hand */
+    height: 200px; /* Height of the minute hand */
+    width: 0; /* Thin hand appearance */
+}
+
+/* Second hand-specific styling */
+.second-hand {
+    background-color: red; /* Red second hand */
+    height: 300px; /* Height of the second hand */
+    width: 0; /* Thin hand appearance */
+}
+
+/* Numbers on each hand (hour, minute, second) */
+.hour-number, .minute-number, .second-number {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Arrange numbers vertically */
+    align-items: center; /* Center numbers horizontally on the hand */
+    justify-content: flex-start; /* Align numbers at the start of the hand */
+    position: absolute;
+    left: 50%; /* Position the numbers in the center horizontally */
+    top: 0; /* Start the numbers at the top of the hand */
+    transform: translate(-50%, 0) rotate(0deg); /* Keep numbers upright */
+    font-size: 14px; /* Font size of the numbers */
+    font-weight: bold; /* Bold numbers */
+    color: black; /* Default text color */
+}
+
+/* Repeated rules for ensuring alignment and centering */
+.hour-number, .minute-number, .second-number {
+    position: absolute;
+    top: 50%; /* Center on the clock vertically */
+    left: 50%; /* Center on the clock horizontally */
+    transform-origin: 0 50%; /* Rotate around the hand's axis */
+    transform: translate(-50%, -50%) rotate(0deg); /* Keep numbers upright */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack numbers vertically */
+    justify-content: center; /* Center numbers along the hand */
+    align-items: center; /* Center numbers horizontally */
+}
+
+/* Individual number styles for hour, minute, and second hands */
+.hour-number div, .minute-number div, .second-number div {
+    font-size: 14px; /* Font size for the numbers */
+    font-weight: bold; /* Make numbers bold */
+    color: black; /* Default number color */
+    margin: 10px 0; /* Spacing between numbers */
+}
+
+/* Specific color adjustments for hour numbers */
+.hour-number div {
+    color: black; /* Keep hour numbers black */
+}
+
+/* Specific color adjustments for minute numbers */
+.minute-number div {
+    color: black; /* Keep minute numbers black */
+}
+
+/* Specific color adjustments for second numbers */
+.second-number div {
+    color: black; /* Keep second numbers black */
+}
