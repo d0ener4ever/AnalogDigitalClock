@@ -49,7 +49,7 @@ How to Run
 
     Clone this repository:
 
-        git clone https://github.com/yourusername/dynamic-clock
+        git clone https://github.com/d0ener4ever/dynamic-clock
 
     Navigate to the project folder:
 
