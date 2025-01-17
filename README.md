@@ -49,13 +49,13 @@ How to Run
 
     Clone this repository:
 
-git clone https://github.com/yourusername/dynamic-clock
+        git clone https://github.com/yourusername/dynamic-clock
 
-Navigate to the project folder:
+    Navigate to the project folder:
 
-    cd dynamic-clock
+        cd dynamic-clock
 
-    Open the index.html file in any modern web browser to see the clock in action.
+        Open the index.html file in any modern web browser to see the clock in action.
 
 Preview
 
